@@ -52,7 +52,7 @@ matrix:
       rootJVM/publishLocal
       rootJS/compile
       rootJS/test:compile
-      # TODO rootJS/test
+      rootJS/test
   - name: dotty-nightly
     jdk: openjdk8
     script:
@@ -67,7 +67,4 @@ matrix:
       rootJVM/publishLocal
       rootJS/compile
       rootJS/test:compile
-      # TODO rootJS/test
-  allow_failures:
-  - name: dotty-nightly
-  - name: dotty
+      rootJS/test
